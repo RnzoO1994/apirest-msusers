@@ -27,5 +27,5 @@ springdoc:
     enabled: true
   swagger-ui:
     enable: true
-#definir ruta de swagger
+# ruta de swagger
     path: /doc/swagger-ui.html

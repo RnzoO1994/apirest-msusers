@@ -22,8 +22,6 @@ public class UserController {
     private UserService createUserUseCase;
 
     @PostMapping
-
-
     public ResponseEntity<CreateUserResponse> createUser(
             @RequestBody CreateUserRequest request
     ) throws Exception {
@@ -31,7 +29,7 @@ public class UserController {
         try {
             return ResponseEntity.ok(createUserUseCase.create(request));
         } finally {
-            log.info("[End  ] POST /v1/users");
+            log.info("[End] POST /v1/users");
         }
     }
 }
