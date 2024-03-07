@@ -2,7 +2,7 @@ package com.homework.msusers.rest;
 
 import com.homework.msusers.domain.CreateUserRequest;
 import com.homework.msusers.domain.CreateUserResponse;
-import com.homework.msusers.usecase.CreateUserUseCase;
+import com.homework.msusers.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/v1/users")
 public class UserController {
     @Autowired
-    private CreateUserUseCase createUserUseCase;
+    private UserService createUserUseCase;
 
     @PostMapping
     public ResponseEntity<CreateUserResponse> createUser(

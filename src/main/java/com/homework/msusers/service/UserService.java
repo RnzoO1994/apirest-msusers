@@ -1,4 +1,4 @@
-package com.homework.msusers.usecase;
+package com.homework.msusers.service;
 
 import com.homework.msusers.domain.CreateUserRequest;
 import com.homework.msusers.domain.CreateUserResponse;
@@ -15,13 +15,15 @@ import java.time.LocalDateTime;
 import java.util.regex.Pattern;
 
 @Service
-public class CreateUserUseCase {
+public class UserService {
     @Autowired
     private UserPersistence userPersistence;
 
     @Autowired
     private PhonePersistence phonePersistence;
 
+    @Autowired
+    private  JwtService jwtService;
     @Value("${validation.regex-email}")
     private String regexStrEmail;
 
@@ -52,7 +54,7 @@ public class CreateUserUseCase {
         if (ifexist)
             throw new Exception("El correo ya registrado");
 
-        String token = "";
+         String token = jwtService.generateToken(request.getEmail());
 
         String timestamp = Timestamp.valueOf(LocalDateTime.now()).toString();
 

@@ -17,5 +17,8 @@ spring:
       hibernate:
         format_sql: 'true'
 validation:
-  regex-email: ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}$
-  regex-password: ^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d@$!%*?&]{8,}$
+  regex-email: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+  regex-password: (.*)+{6,16}
+
+jwt:
+  expiration: 720000
