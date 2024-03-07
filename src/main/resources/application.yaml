@@ -22,3 +22,10 @@ validation:
 
 jwt:
   expiration: 720000
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enable: true
+#definir ruta de swagger
+    path: /doc/swagger-ui.html
