@@ -1,42 +1,44 @@
-# Proyecto msusers
+Proyecto msusers
+API Rest for Creating Users
 
-Api Rest for Creating Users
-## Requisitos
-- JDK 17
-- Spring Framework 3.2.3
-- Maven 3.8
-
+Requisitos
+JDK  1.8.0_202
+Spring Framework 3.2.3
+Maven 3.8
+port 8085
 Pasos para levantar el proyecto:
+1. Clonar el repositorio utilizando el siguiente comando:
 
-1. Clonar el repositorio utilizando el siguiente comando [ git clone https://github.com/RnzoO1994/apirest-msusers.git]
-(de preferencia crear una carpeta donde se desee clonar el repositorio, utilizar la consola de git)
-2. ir a la carpeta principal del proyecto y abrir una ventana de comandos. Ejecutar el siguiente comando : mvn clean install
-3. Ejecutar en la misma ventana de comandos, el siguiente comando: 
+git clone https://github.com/RnzoO1994/apirest-msusers.git
+(Es preferible crear una carpeta donde se desee clonar el repositorio y utilizar la consola de git)ss
+
+2. Ir a la carpeta principal del proyecto y abrir una ventana de comandos. Ejecutar el siguiente comando:
+mvn clean install
+
+3. Ejecutar en la misma ventana de comandos el siguiente comando:
+
 java -jar target/msusers-0.0.1.jar
-4. Acceder a la aplicacion:
-copiar la siguiente ruta en el navegador: http://localhost:8080/doc/swagger-ui/index.html
-5. Probar el servicio create-user. Adjunto un json de prueba. Modificar los datos y enviar la petición.
+
+4. Acceder a la aplicación:
+Copiar la siguiente ruta en el navegador: http://localhost:8085/doc/swagger-ui/index.html
+
+5. Probar el servicio create-user. Se adjunta un JSON de prueba. Modificar los datos y enviar la petición.
+
 {
   "name": "Usuario nuevo",
-  "email": "newUser12334@dominio.cl",
-  "password": "123456ab",
+  "email": "newuser14@dominio.cl",
+  "password": "pasword12",
   "phones": [
     {
-      "number": "123456",
+      "number": "85214",
       "cityCode": "1",
       "countryCode": "60"
     },
-        {
+    {
       "number": "1234567",
       "cityCode": "2",
       "countryCode": "5734"
     }
   ]
 }
-5. Tambien se puede probar utilizando postman, en la raiz del proyecto adjunto la coleccion.
-
-
-
-
-
-
+6. También se puede probar utilizando Postman, para ello se debe importar la collecion. En la carpeta raíz del proyecto, se adjunta el archivo : Prueba msusers.postman_collection.json

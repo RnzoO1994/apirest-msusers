@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:file:/data/demo
+    url: jdbc:h2:./data/db
     username: sa
     password: 1234
     driverClassName: org.h2.Driver
@@ -29,3 +29,5 @@ springdoc:
     enable: true
 # ruta de swagger
     path: /doc/swagger-ui.html
+server:
+  port: 8085

@@ -7,7 +7,7 @@ import com.homework.msusers.persistence.PhonePersistence;
 import com.homework.msusers.persistence.UserPersistence;
 import com.homework.msusers.persistence.entity.Phone;
 import com.homework.msusers.persistence.entity.User;
-import jakarta.annotation.PostConstruct;
+import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
