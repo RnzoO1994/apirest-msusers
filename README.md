@@ -3,7 +3,7 @@ API Rest for Creating Users
 
 Requisitos
 JDK  1.8.0_202
-Spring Framework 3.2.3
+Spring Framework 2.5.3
 Maven 3.8
 port 8085
 Pasos para levantar el proyecto:
