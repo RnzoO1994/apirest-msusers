@@ -20,7 +20,7 @@ mvn clean install
 java -jar target/msusers-0.0.1.jar
 
 4. Acceder a la aplicación:
-Copiar la siguiente ruta en el navegador: http://localhost:8085/doc/swagger-ui/index.html
+Copiar la siguiente ruta en el navegador:  http://localhost:8085/swagger-ui.html
 
 5. Probar el servicio create-user. Se adjunta un JSON de prueba. Modificar los datos y enviar la petición.
 
