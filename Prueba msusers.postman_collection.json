@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "a136f1c3-d1c6-463b-8e68-4e8fae2e0745",
+		"name": "Prueba msusers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9532937",
+		"_collection_link": "https://solar-shuttle-297392.postman.co/workspace/TESHIRE~1b7330f8-d233-40d0-a5e0-d7ac143b9476/collection/9532937-a136f1c3-d1c6-463b-8e68-4e8fae2e0745?action=share&source=collection_link&creator=9532937"
+	},
+	"item": [
+		{
+			"name": "v1/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Usuario nuevo\",\r\n  \"email\": \"user456@dominio.cl\",\r\n  \"password\": \"123456ab\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"741258\",\r\n      \"cityCode\": \"1\",\r\n      \"countryCode\": \"57\"\r\n    },\r\n        {\r\n      \"number\": \"12345\",\r\n      \"cityCode\": \"12\",\r\n      \"countryCode\": \"5734\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
